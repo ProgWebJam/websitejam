@@ -1,0 +1,691 @@
+/*CREAR VARIABLES (lo ponemos en root porque es la parte mas alta mas que *)*/
+:root{
+	--color1: rgba(219,144,.5);
+	/*,.0788 = transparencia*/
+	--color2: rgba(23,180,83,.0788);
+	--color3: rgba(11,194,211,0.623);
+	/*color de fondo*/
+	--fondo: #f2f2f2;
+	--titulos: 36px;
+	--subtitulo: 18px;
+	--margenes: 60px;
+	--espacios: 10px;
+	--espacios-contenido: 45px;
+}
+
+/*Resetear margen*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Agregamos una fuente al body*/
+body {
+
+	font-family: 'Open Sans', sans-serif !important;
+	/*font-family: 'open sans';*/
+	/*fondo body*/
+	background: var(--fondo);
+}
+
+/*ESTILOS GENERALES A LAS IMAGENES*/
+img{
+	vertical-align: top;
+}
+
+/*-------------------INICIO HEADER-------------------*/
+
+header{
+
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(to bottom,
+	rgba(119, 136, 153,.6),
+	rgba(0, 206, 209,.6),
+	rgba(65, 105, 225,.45)
+	), url(../img/fondo.jpg);
+	/*	Controla la imagen de fondo para que permanece fija cuando se hace scroll en la ventana del navegador*/
+	background-attachment: fixed;
+	background-position: center 40%;
+	/*para que se adapte a toda la pantalla*/
+	background-size: cover;
+
+}
+
+/*******INICIO NAV*******/
+nav{
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+/*******NAV (MENU PEGADIZO)*******/
+
+.nav1{
+
+	background: transparent;
+	height: 80px;
+	color: #fff;
+
+}
+
+.nav2{
+	background: var(--fondo);
+	height: 100px;
+	color: #000;
+}
+
+/*******CONTENEDOR DEL MENU (NAV)*******/
+.container-nav{
+
+	display: flex;
+	margin: auto;
+	width: 90%;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	height: inherit;
+	overflow: hidden;
+}
+
+/*******ENLACES PROPIEDAD a*******/
+
+nav .links a{
+
+	display: inline-block;
+	padding: 5px 0;
+	margin-right: 17px;
+	font-size: 17px;
+	font-weight: 300px;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	color: inherit;
+
+}
+
+/*efecto de subrayado al colocar el cursos en los elementos del menu*/
+nav .links a:hover{
+	border-bottom: 3px solid #1498a4;
+	transition: 0.6s;
+
+}
+
+/*******TAMAÑO LOGO*******/
+.logo, .logo img{
+	height: 80px;
+}
+
+/*******MENU RESPONSIVE*******/
+.icon{
+	display: none;
+	font-size: 24px;
+	padding: 23.5px 20px;
+}
+
+/*******TEXTO*******/
+.texts{
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+/*******TEXTO H1*******/
+.texts>h1{
+
+	font-size: 80px;
+}
+
+/*******TEXTO H2*******/
+.texts>h2{
+
+	font-size: 30px;
+	font-weight: 300;
+}
+
+/*******FIN NAV*******/
+
+/*-------------------FIN HEADER-------------------*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*-------------------INICIO MAIN-------------------*/
+
+/*******CONTENEDOR(Todo lo que contega la palabra contenedor)*******/
+.container{
+
+	/*centra todo el contenido*/
+	margin: auto;
+	/*Arriba y abajo : --margenes y a los lado 0 */
+	padding: var(--margenes) 0;
+	width: 90%;
+	max-width: 1000px;
+	text-align: center;
+	overflow: hidden;
+
+}
+
+.container h3{
+	font-size: var(--titulos);
+	color: var(--color1);
+	margin-bottom: var(--espacios);
+}
+
+.container p{
+
+	font-size: var(--subtitulo);
+	font-weight: 300;
+	color: #A9A9A9;
+}
+
+.container span{
+	color: #34495e;
+}
+
+/*
+sub clase after agrega una caja despues del elemento (.after)
+.after: linea amarilla de separacion;
+*/
+.after::after{
+
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: var(--espacios);
+	width: 100px;
+	height: 2px;
+	background: var(--color1);
+	margin-bottom: var(--espacios-contenido);
+
+}
+/*******FIN CONTENEDOR*******/
+
+
+
+/*******INICIO CARD-QUIEN SOY*******/
+.card{
+	display: flex;
+	justify-content: space-around;
+	/*Si las imagenes son mas grandes que no se me junten si no que vayan bajando*/
+	flex-wrap: wrap;
+
+}
+
+.content-card{
+	width: 31%;
+	/*sombra en cada card*/
+	box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+	overflow: hidden;
+	height: 400px;
+}
+
+/*IMAGENES*/
+.people{
+	height: 80%;
+}
+
+.content-card img{
+	width: 100%;
+	height: 100%;
+	/* propiedad imagenes: se va mejor las imagenes no tan apretadas*/
+	object-fit: cover;
+	background-position: center;
+	/*evitar que se repita la imagen*/
+	background-size: cover;
+}
+
+.text-information{
+	height: 20%;
+	width: 100%;
+	/*altura de boton link de datos personales*/
+	padding: 20px 0 ;
+}
+
+/*INICIO MODAL*/
+
+
+/*estilos del link para el modal*/
+.text-information a {
+	text-decoration: none;
+	font-size: 20px;
+	display: inline-block;
+	padding: 7px;
+	width: 220px;
+	border: 1px solid #6495ED;
+	border-radius: 10px;
+	color: #6495ED;
+}
+
+/*efecto cursos encima del link para el modal*/
+.text-information a:hover{
+
+	background: #34495e;
+	color: #fff;
+	border: 1px solid #34495e;
+}
+
+
+
+.flex{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.452);
+
+
+}
+
+.content-modal{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 40%;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.4);
+	animation-name: modal;
+	animation-duration: 1s;
+
+}
+
+@keyframes modal{
+	from{
+		top: -330px;
+		opacity: 0;
+	}
+	to{
+		top: 0;
+		opacity: 1;
+
+	}
+}
+
+.close{
+	color: #f2f2f2;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.close:hover{
+	color: #7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header{
+	padding: 8px 16px;
+	background: #34495e;
+	color: #f2f2f2;
+}
+
+.modal-body{
+	display: flex;
+	padding: 20px 16px;
+	justify-content: space-around;
+}
+
+.modal-body p {
+	display: inline-block;
+	font-size: 18px;
+}
+
+.modal-body img{
+
+	width: 35%;
+	height: 35%;
+
+}
+
+.colortitle{
+	color: #A9A9A9;
+}
+
+.colorSubt{
+	color: #6495ED;
+}
+/*FIN MODAL*/
+
+
+/*******FIN CARD-QUIEN SOY*******/
+
+
+/*******INICIO CARD-SERVICIOS*******/
+
+/*CARD PRINCIPAL : FONDO*/
+.about{
+
+	background: url(../img/teclado.jpg);
+
+	background-position: center;
+	/*para que se adapte a toda la pantalla*/
+	background-size: cover;
+
+}
+
+/*CONTENEDOR CARD SECUNDARIAS*/
+.svc{
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+	margin: auto;
+	flex-wrap: wrap;
+
+}
+
+.box-svc>h4{
+	margin: var(--espacios);
+	font-size: 30px;
+	color: #FFA500;
+}
+
+/*
+.box-svc>p{
+	text-align: center;
+}
+*/
+
+/*******FIN CARD-SERVICIOS*******/
+
+
+/*******INICIO CARD-CERTIFICADOS*******/
+
+/*BOTONES GALERIA*/
+.buttons-certificates{
+	overflow: hidden;
+}
+
+/*BOTONES li*/
+.buttons-certificates li{
+	display: inline-block;
+	text-align: center;
+	margin-left: var(--espacios);
+	margin-bottom: var(--espacios-contenido);
+	padding: 6px 12px;
+	border: 1px solid var(--color1);
+	list-style: none;
+	color: var(--color1);
+}
+
+/*EFECTO BOTONES li : cuando pase el mause por los botones que los elementos cambie de color*/
+.buttons-certificates li:hover{
+	background: var(--color1);
+	color: #fff;
+	cursor: pointer;
+}
+
+/*para que el boton todos al principio este activado*/
+.buttons-certificates .active{
+	background: var(--color1);
+	color: #fff;
+}
+
+/*CONTENEDOR IMAGENES GALERIA*/
+.gallery-certificates{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*CONTENEDOR DE CADA SECCIOND DE LAS IMAGENES 3 img por fila dependiendo del % width*/
+.gallery-certificates .cont-certificates{
+	width: 46%;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	height: 360px;
+	overflow: hidden;
+	margin-bottom: var(--espacios-contenido);
+}
+
+.img-certificates{
+	height: 90%;
+	width: 100%;
+}
+
+.img-certificates img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+/*Texto abajo de las imagenes*/
+.texts-certificates{
+	height: 10%;
+}
+
+.texts-certificates h4{
+	line-height: 30px;
+	font-weight: 300;
+	color: #6495ED; 
+}
+/*******FIN CARD-NUESTRO CERTIFICADOS*******/
+
+/*-------------------FIN MAIN-------------------*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*-------------------INICIO FOOTER-------------------*/
+
+/*fondo*/
+footer{
+	background: url(../img/footer.jpg);
+}
+
+/*tamaño logo*/
+.brand-logo{
+	width: 40%;
+	margin: auto;
+	margin-bottom: var(--espacios);
+}
+
+.brand-logo img{
+	width: 100%;
+}
+
+/*
+.iconos{
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	width: 100%;
+}*/
+
+footer p{
+	margin-top: var(--espacios);
+}
+
+/*-------------------FIN FOOTER-------------------*/
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*-------------------RESPONSIVE TAMAÑO TABLE-------------------*/
+ @media only screen and (max-width : 700px) {
+
+	:root{
+
+		--margenes: 30px;
+
+	}
+
+	header{
+		background-attachment: fixed;
+		background-position: center;
+		/*para que se adapte a toda la pantalla*/
+		background-size: cover;
+	}
+	
+	/*navegador*/
+	.nav2{
+			color: #fff;
+		}
+
+	/*menu hambuerguesa*/
+	.icon{
+			display: block;
+			/*Para cuando pase el mouse sobre el menu se vea el cursor*/
+			cursor: pointer;
+		}
+
+	/*enlaces menu*/
+	.links{
+		/*para que roma todo lo de flex-block*/
+		position: fixed;
+		top: 80px;
+		background: #2c3e50;
+		left: 0;
+		height: 100%;
+		transition: 1s;
+		/*Para esconder el menu*/
+		width: 0;
+		overflow: hidden;
+	}
+
+	.links a{
+		display: block;
+		width: 100%;
+		height: 50px;
+		padding: 20px;
+		text-align: center;
+		background: #34495e;
+		color: #fff;
+	}
+
+	/*texto */
+	.texts>h1{
+		font-size: 70px;
+	}
+
+	.texts>h2{
+		font-size: 35px;
+	}
+
+	.content-card{
+		width: 48%;
+		margin-bottom: var(--margenes);
+	}
+
+
+
+
+/*VENTANA MODAL*/
+	.text-information a{
+		font-size: 18px;
+		width: 140px;
+		padding: 4px;
+
+	}
+
+	.content-modal{
+		width: 65%;
+
+	}
+
+
+	.box-svc{
+		margin: auto;
+		width: 50%;
+		margin-bottom: var(--margenes);
+
+		
+	}
+
+	.gallery-certificates .cont-certificates{
+		width: 70%;
+	}
+
+	
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*-------------------RESPONSIVE TAMAÑO CELULAR-------------------*/
+
+
+ @media only screen and (max-width : 500px) {
+
+	:root{
+
+		--espacios-contenidos: 30px;
+		--margenes:25px;
+
+	}
+
+	.about{
+
+		/*Esta 2 variables ayudan a que se adapte la imagen */
+		background-position: center;
+		/*evitar que se repita la imagen*/
+		background-size: cover;
+	}
+
+	.content-card{
+
+		width: 80%;
+		margin-bottom: 20px;
+
+	}
+
+	.box-svc{
+		margin: auto;
+		width: 80%;
+		margin-bottom: var(--margenes);
+
+		
+	}
+
+	.gallery-certificates .cont-certificates{
+		width: 85%;
+	}
+
+	.brand-logo{
+		width: 80%;
+	}
+
+	.content-modal{
+
+	width: 80%;
+
+
+	}
+
+	.modal-body{
+		display: flex;
+		padding: 12px 9px;
+		justify-content: space-around;
+	}
+
+	.modal-body p {
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	.modal-body img{
+
+		width: 20%;
+		height: 20%;
+
+	}
+
+}

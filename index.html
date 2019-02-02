@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pagina Web</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" >
+</head>
+<body>
+
+
+	<!-- ************INICIO HEADER************** -->
+		<header>
+
+	<!-- ***MENU*** -->
+			<nav id="nav" class="nav1">
+
+	<!-- ***CONTENEDOR MENU*** -->
+
+				<div class="container-nav">
+
+	<!-- CONTENEDOR LOGO -->
+					<div class="logo">
+						
+						<img src="img/logo.png" alt="">
+
+
+					</div>
+
+					<div class="fondo">
+					
+					</div>
+	<!-- FIN CONTENEDOR LOGO -->
+
+	<!-- CONTENEDOR ENLACES MENU-->	
+					<div class="links" id="links">
+						
+						<a href="#" id="link-star" class="btn-header">Inicio</a>
+						<a href="#" id="link-information" class="btn-header">Quien Soy</a>
+						<a href="#" id="link-services" class="btn-header">Servicios</a>
+						<a href="#" id="link-certificates" class="btn-header">Certificados</a>
+						<a href="#" id="link-contacts" class="btn-header">Contacto</a>
+
+					</div>
+	<!-- FIN CONTENEDOR ENLACES MENU -->
+
+	<!-- MENU RESPONSIVE -->
+					<div class="icon" id="open">
+						<span>&#9776;</span>
+					</div>
+	<!-- MENU FIN RESPONSIVE -->
+
+			
+
+	<!-- FIN CONTENEDOR ENLACES -->		
+					
+				</div>
+	<!-- ***FIN CONTENEDOR MENU*** -->
+
+			</nav>
+	<!-- ***FIN MENU*** -->
+
+	<!-- ***TEXTO HEADER*** -->
+			<div class="texts">
+				<h1>Jhon Marulanda</h1>
+				<h2>Tecnólogo en Sistemas</h2>
+			</div>
+	<!-- ***FIN TEXTO HEADER*** -->
+
+		</header>
+	<!-- ***********FIN HEADER************ -->
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!-- ************INICIO MAIN************** -->
+		<main>
+
+			<!-- ***CONTENEDOR QUIEN SOY*** -->
+			<section class="information container" id="information">
+
+				<h3>Quien Soy</h3>
+				<p class="after">Conoce más sobre mi</p>	
+
+				<!-- ***CAJA QUIEN SOY** -->
+				<div class="card">
+
+					<!-- ***CAJA DATOS PERSONALES*** -->
+					<div class="content-card">
+						<div class="people">
+
+							<!--Imagen Datos Personales-->
+							<img src="img/datos.jpg" alt="">
+
+						</div>
+
+						<div class="text-information">
+
+							<!--Link abrir modal datos personales-->
+							<a href="#" id="openModal1">Datos Personales</a>
+
+						</div>
+					</div>	
+					<!-- ***FIN CAJA DATOS PERSONALES*** -->
+
+
+					<!-- ***CAJA PROFESION*** -->
+					<div class="content-card">
+						<div class="people">
+							<!--Imagen Profesion-->
+							<img src="img/profesion.jpg" alt="">
+						</div>
+	
+						<div class="text-information">
+
+							<!--Link abrir modal Profesion-->
+							<a href="#" id="openModal2">Profesion</a>
+
+						</div>
+					</div>	
+					<!-- ***FIN CAJA PROFESION*** -->
+
+
+					<!-- ***CAJA EDUCACION*** -->
+					<div class="content-card">
+						<div class="people">
+							<!--Imagen Educacion-->
+							<img src="img/educacion.jpg" alt="">
+						</div>
+						
+						<div class="text-information">
+
+							<!--Link abrir modal Educacion-->
+							<a href="#" id="openModal3">Educacion</a>
+
+						</div>
+					</div>
+					<!-- ***FIN CAJA EDUCACION*** -->
+
+
+				</div>
+				<!-- ***FIN CAJA CAJA QUIEN SOY*** -->
+
+			</section>
+			<!-- ***FIN CONTENEDOR QUIEN SOY*** -->
+
+
+
+		<!--**************INICIO VENTANAS MODALES QUIEN SOY******************-->
+
+			<!--INICIO VENTANA MODAL DATOS PERSONALES-->
+			<div id="myModal" class="modal">
+				
+				<div class="flex" id="flex">
+					
+
+					<div class="content-modal">
+						
+						<!--Cabeza del modal-->
+						<div class="modal-header flex">
+							<h2>Datos personales</h2>
+
+						<!--Boton x-->
+							<span class="close" id="close">
+								&times;
+							</span>
+						</div>
+
+					
+						<!--Cuerpo del modal-->
+						<div class="modal-body">
+							
+							<!--foto modal-->
+							<img src="img/foto.png" alt="">
+
+							<!--texto modal-->
+							<p> 
+								<spam class="colortitle">Nombres:</spam> 
+								<spam class="colorSubt">Jhon Alexander</spam></br>
+
+								<spam class="colortitle">Apellidos:</spam> 
+								<spam class="colorSubt">Marulanda Higuita</spam></br>
+
+								<spam class="colortitle">Fecha de nacimiento:</spam>  
+								<spam class="colorSubt">17/05/1985</spam> </br>
+
+								<spam class="colortitle">Ciudad:</spam>  
+								<spam class="colorSubt">Cali</spam> </br>
+
+								<spam class="colortitle">Ubicacion:</spam>  
+								<spam class="colorSubt">Sur</spam> </br>
+
+
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!--FIN VENTANA MODAL DATOS PERSONALES-->
+
+			<!--INICIO VENTANA MODAL PROFESION-->
+			<div id="myModal2" class="modal">
+				
+				<div class="flex" id="flex">
+					
+					<div class="content-modal">
+
+						<!--Cabeza del modal-->
+						<div class="modal-header flex">
+							<h2>Profesión</h2>
+							<!--Boton x-->
+							<span class="close" id="close2">
+								&times;
+							</span>
+						</div>
+
+					
+						<!--Cuerpo del modal-->
+						<div class="modal-body">
+							
+							<!--texto modal-->
+							<p> 
+								<spam class="colortitle">Título:</spam> 
+								<spam class="colorSubt">Tecnólogo en Sistemas</spam></br>
+
+								<spam class="colortitle">Universidad:</spam> 
+								<spam class="colorSubt">Fundación universitaria católica lumen gentium - UNICATÓLICA</spam></br>
+
+								<spam class="colortitle">Fecha inicio-fin:</spam> 
+								<spam class="colorSubt">Enero 2009 – Noviembre 2013</spam></br>
+
+								</br><spam class="colorSubt">Conocimientos:</spam></br>
+
+								<spam class="colortitle">- Leguaje de programación:</spam> 
+								<spam class="colorSubt">Java, PHP, CSS3, HTML5, JavaScript</spam>
+								</br>
+
+								<spam class="colortitle">- Motores de BD:</spam> 
+								<spam class="colorSubt">MySQL, Oracle, SQL Server</spam></br>
+
+								<spam class="colortitle">- Framework:</spam> 
+								<spam class="colorSubt">React.js, Node.js, Bootstrap 4</spam></br>
+
+								<spam class="colortitle">- Repositorios:</spam> 
+								<spam class="colorSubt">Git, GitHub</spam></br>
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!--FIN VENTANA MODAL PROFESION-->
+
+			<!--INICIO VENTANA MODAL EDUCACION-->
+			<div id="myModal3" class="modal">
+				
+				<div class="flex" id="flex">
+					
+					<div class="content-modal">
+						<!--Cabeza del modal-->
+						<div class="modal-header flex">
+							<h2>Educación</h2>
+							<!--Boton x-->
+							<span class="close" id="close3">
+								&times;
+							</span>
+						</div>
+
+					
+						<!--Cuerpo del modal-->
+						<div class="modal-body">
+							
+							<!--texto modal-->
+							<p> 
+								<spam class="colortitle">- Universidad:</spam> 
+								<spam class="colorSubt">Fundación Universitaria Lumen Gentium</spam></br>
+
+								<spam class="colortitle">Título:</spam> 
+								<spam class="colorSubt">Ingeniera de sistemas</spam></br>
+
+								<spam class="colortitle">Estado:</spam> 
+								<spam class="colorSubt">Estudio actual - Homologante</spam></br>
+
+								<spam class="colortitle">Semestre:</spam> 
+								<spam class="colorSubt">Actualmente cursando 9° Semestre (Nocturno)</spam></br>
+
+								</br>
+
+								<spam class="colortitle">- Universidad:</spam> 
+								<spam class="colorSubt">Fundación Universitaria Lumen Gentium</spam></br>
+
+								<spam class="colortitle">Título:</spam> 
+								<spam class="colorSubt">Tecnólogo en Sistemas</spam></br>
+
+								<spam class="colortitle">Estado:</spam> 
+								<spam class="colorSubt">Graduado</spam></br>
+
+								</br>
+
+								<spam class="colortitle">- Universidad:</spam> 
+								<spam class="colorSubt">Academia de Dibujo Profesional</spam></br>
+
+								<spam class="colortitle">Título:</spam> 
+								<spam class="colorSubt">Técnico profesional en Diseño Gráfico con énfasis en marketing Virtual y pagina web</spam></br>
+
+								<spam class="colortitle">Estado:</spam> 
+								<spam class="colorSubt">Graduado</spam></br>
+
+								</br>
+
+								<spam class="colortitle">- Colegio:</spam> 
+								<spam class="colorSubt">Fray Damián González</spam></br>
+
+								<spam class="colortitle">Título:</spam> 
+								<spam class="colorSubt">Bachillerato Académico</spam></br>
+
+								<spam class="colortitle">Fecha:</spam> 
+								<spam class="colorSubt">1998-2002</spam></br>
+
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!--FIN VENTANA MODAL EDUCACION-->
+
+
+		<!--**************FIN VENTANAS MODALES QUIEN SOY******************-->	
+
+<!------------------------------------SERVICIOS---------------------------------------->
+
+			<!-- ***INICIO CONTENEDOR NUESTRO SERVICIO*** -->
+			<section class="about" id="services">
+
+				<!-- ***INICIO CONTENEDOR PRINCIPAL*** -->
+				<div class="container">
+
+					<h3>Servicios</h3>
+					<p class="after"><span>Tengo actitud para desempañarme en areas como :</span></p>
+
+					
+					<!-- svc:service - contenedor antes servicios que se cambio a svc-->
+					<div class="svc">
+
+						<!-- ***INICIO CONTENEDOR DISEÑO*** -->
+						<div class="box-svc">
+							<img src="img/diseño.png" alt="">
+							<h4>Diseño</h4>
+							<!--<p>Lorem ipsum dolor sit amet, consectetur.</p>-->
+						</div>
+						<!-- ***FIN CONTENEDOR DISEÑO*** -->
+
+						<!-- ***INICIO CONTENEDOR DESARROLLO*** -->
+						<div class="box-svc">
+							<img src="img/desarrollo.png" alt="">
+							<h4>Desarrollo</h4>
+							<!--<p>Lorem ipsum dolor sit amet, consectetur.</p>-->
+						</div>
+						<!-- ***FIN CONTENEDOR DESARROLLO*** -->
+
+						<!-- ***INICIO CONTENEDOR SOPORTE*** -->
+						<div class="box-svc">
+							<img src="img/bd.png" alt="">
+							<h4>BD</h4>
+							<!--<p>Lorem ipsum dolor sit amet, consectetur.</p>-->
+						</div>
+						<!-- ***FIN CONTENEDOR SOPORTE*** -->
+
+					</div>
+					
+
+				</div>
+				<!-- ***FIN CONTENEDOR PRINCIPAL*** -->	
+			</section>
+			<!-- ***FIN CONTENEDOR NUESTRO SERVICIO*** -->
+
+
+<!-------------------------------------CERTIFICADOS--------------------------------------->
+
+			<!-- ***CONTENEDOR NUESTRO CERTIFICADOS*** -->
+			<section class="certificates container" id="certificates">
+
+				<h3>Certificados</h3>
+				<p class="after">Documentos que me certifica en varios campos como :</p>
+
+				<!-- ***INICIO CONTENEDOR BOTONES JQUERY*** -->
+				<div class="buttons-certificates">
+					<ul>
+						<li class="filter active" data-name='todos'>Todo</li>
+						<li class="filter" data-name='study'>Estudio</li>
+						<li class="filter" data-name='work'>Laboral</li>
+						<li class="filter" data-name='course'>Cursos</li>
+					</ul>
+				</div>
+				<!-- ***FIN CONTENEDOR BOTONES JQUERY*** -->
+
+				<!-- ***INICIO CONTENEDOR GALERIAS TECNOLOGIA*** -->
+				<div class="gallery-certificates">
+					
+					<!-- ***CONTENEDOR GALERIAS ESTUDIOS*** -->
+					<div class="cont-certificates study">
+						<div class="img-certificates">
+						<!--<div class="img-work">-->
+							<img src="img/Diploma_Grado.jpg" alt="">
+						</div>
+						<div class="texts-certificates">
+							<h4>Tecnólogo en Sistemas</h4>
+						</div>
+					</div>	
+					<!-- ***FIN CONTENEDOR GALERIAS ESTUDIOS TECNOLOGIA*** -->
+
+					<!-- ***CONTENEDOR GALERIAS ESTUDIOS DISEÑO*** -->
+					<div class="cont-certificates study">
+						<div class="img-certificates">
+						<!--<div class="img-work">-->
+							<img src="img/diseñoGrafico.jpg" alt="">
+						</div>
+						<div class="texts-certificates">
+							<h4>Técnico Profesional en Diseño Gráfico</h4>
+						</div>
+					</div>	
+					<!-- ***FIN CONTENEDOR GALERIAS ESTUDIOS DISEÑO*** -->
+
+
+         	<!--------------------C. LABORAL-------------------->
+
+
+          			<!-- ***INICIO CONTENEDOR GALERIAS LABORAL*** -->
+					<div class="cont-certificates work">
+						<div class="img-certificates">
+							<img src="img/tiqal.jpg" alt="">
+						</div>
+						<div class="texts-certificates">
+							<h4>TiQal s.a.s</h4>
+						</div>
+					</div>	
+					<!-- ***FIN CONTENEDOR GALERIAS LABORAL**** -->
+
+
+          	<!--------------------C. CURSOS-------------------->
+
+
+          			<!-- ***INICIO CONTENEDOR GALERIAS CURSOS1*** -->
+					<div class="cont-certificates course">
+						<div class="img-certificates">
+							<img src="img/platzi.jpg" alt="">
+						</div>
+						<div class="texts-certificates">
+							<h4>Java Script Basico</h4>
+						</div>
+					</div>	
+					<!-- ***FIN CONTENEDOR GALERIAS CURSOS1*** -->
+
+					<!-- ***INICIO CONTENEDOR GALERIAS CURSOS 2*** -->
+					<div class="cont-certificates course">
+						<div class="img-certificates">
+							<img src="img/udemy.jpg" alt="">
+						</div>
+						<div class="texts-certificates">
+							<h4>HTML5 Y  CSS3</h4>
+						</div>
+					</div>	
+					<!-- ***FIN CONTENEDOR GALERIAS CURSOS 2*** -->
+
+
+				</div>
+				<!-- ***FIN CONTENEDOR GALERIAS*** -->
+
+			</section>
+			<!-- ***FIN CONTENEDOR NUESTRO TRABAJO*** -->
+
+
+		</main>
+<!-- ************FIN MAIN************** -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- ************INICIO FOOTER************** -->
+		
+		<footer id="contacts">
+			<div class="footer container">
+				<div class="brand-logo">
+					<img src="img/logo5.png" alt="">
+				</div>
+				<!--<div class="iconos">
+					
+				</div>-->
+				<p>
+				<spam class="colortitle">Celular:</spam>  
+				<spam class="colorSubt">300 625 4854</spam>
+
+				<spam class="colortitle"> - Teléfono:</spam>  
+				<spam class="colorSubt">3082316</spam> </br>
+
+				<spam class="colortitle">E-mail:</spam>  
+				<spam class="colorSubt">jamm-05@hotmail.com</spam> </br>
+
+				<spam class="colortitle">Cali - Colombia</spam>
+				</p>
+			</div>	
+		</footer>
+<!-- ************FIN FOOTER************** -->
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- ******INICIO JQUERY***** -->
+<script type="text/javascript" src="js/jquery.js?v=2"></script>
+<!-- ******FIN JQUERY***** -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- ******INICIO JQUERY FILTRO***** -->
+<script src="js/filtro.js?v=2""></script>
+<!-- ******FIN JQUERY FILTRO***** -->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- ******INICIO JAVASCRIPT***** -->
+<script src="js/main.js"></script>
+<!-- ******FIN JAVASCRIPT***** -->
+
+
+
+</body>
+</html>
