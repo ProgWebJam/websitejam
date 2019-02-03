@@ -722,6 +722,8 @@ and (max-device-width : 568px) {
 			display: block;
 			/*Para cuando pase el mouse sobre el menu se vea el cursor*/
 			cursor: pointer;
+			height: 30%;
+			width: 30%;
 		}
 
 	/*enlaces menu*/
