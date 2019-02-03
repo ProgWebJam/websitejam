@@ -689,3 +689,77 @@ footer p{
 	}
 
 }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*-------------------RESPONSIVE TAMAÑO IPHON 5S-------------------*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+
+	:root{
+
+		--espacios-contenidos: 30px;
+		--margenes:25px;
+
+	}
+
+	.about{
+
+		/*Esta 2 variables ayudan a que se adapte la imagen */
+		background-position: center;
+		/*evitar que se repita la imagen*/
+		background-size: cover;
+	}
+
+	.content-card{
+
+		width: 80%;
+		margin-bottom: 20px;
+
+	}
+
+	.box-svc{
+		margin: auto;
+		width: 80%;
+		margin-bottom: var(--margenes);
+
+		
+	}
+
+	.gallery-certificates .cont-certificates{
+		width: 85%;
+	}
+
+	.brand-logo{
+		width: 80%;
+	}
+
+	.content-modal{
+
+	width: 80%;
+
+
+	}
+
+	.modal-body{
+		display: flex;
+		padding: 12px 9px;
+		justify-content: space-around;
+	}
+
+	.modal-body p {
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	.modal-body img{
+
+		width: 20%;
+		height: 20%;
+
+	}
+
+
+}
