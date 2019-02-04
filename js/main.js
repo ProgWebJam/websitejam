@@ -36,7 +36,7 @@ function menus(){
 		nav.className = ('nav1');
 		//tiempo de transicion entre nav1 y nav2 1segundo
 		nav.style.transition = '1s';
-		menu.style.top = '80px';
+		menu.style.top = '160px';
 		//menu responsive inicio color blanco
 		open.style.color = '#fff';
 
@@ -58,7 +58,7 @@ function apertura(){
 
 	if(close){
 
-		menu.style.width = '70%';
+		menu.style.width = '70vw';
 		close = false;
 		
 

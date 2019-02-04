@@ -57,11 +57,13 @@ header{
 nav{
 	width: 100%;
 	position: fixed;
-	box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+
 }
 
 /*******NAV (MENU PEGADIZO)*******/
 
+/*contenedor parte superiro del header donde esta el logo y el  menu*/
 .nav1{
 
 	background: transparent;
@@ -119,8 +121,10 @@ nav .links a:hover{
 /*******MENU RESPONSIVE*******/
 .icon{
 	display: none;
+	/*tamaño de icono menu hambuerguesa*/
 	font-size: 24px;
 	padding: 23.5px 20px;
+
 }
 
 /*******TEXTO*******/
@@ -547,7 +551,7 @@ footer p{
 			cursor: pointer;
 		}
 
-	/*enlaces menu*/
+	/*aqui es donde se crea el menu responsive cunado es tipo celular*/
 	.links{
 		/*para que roma todo lo de flex-block*/
 		position: fixed;
@@ -634,6 +638,7 @@ footer p{
 
 	.about{
 
+		
 		/*Esta 2 variables ayudan a que se adapte la imagen */
 		background-position: center;
 		/*evitar que se repita la imagen*/
@@ -704,26 +709,51 @@ and (max-device-width : 568px) {
 
 	}
 
+
 	header{
-		background-attachment: fixed;
+		/*tamaño del todo el header*/
+		height: 900px;
+
+
+	}
+
+	.about{
+
+		
+		/*Esta 2 variables ayudan a que se adapte la imagen */
 		background-position: center;
-		/*para que se adapte a toda la pantalla*/
+		/*evitar que se repita la imagen*/
 		background-size: cover;
 	}
 	
-	/*navegador*/
+/*INICIO HEADER*/
+
+	/*cambiar el alto del contenedor donde esta el logo y el menu*/
+	.nav1{
+		height: 160px;
+	}
+
 	.nav2{
 			color: #fff;
 		}
+
+	/*******TAMAÑO LOGO*******/
+	.logo, .logo img{
+		height: 120px;
+	}
 
 	/*menu hambuerguesa*/
 	.icon{
 			display: block;
 			/*Para cuando pase el mouse sobre el menu se vea el cursor*/
 			cursor: pointer;
+			/*(cambio)tamaño de icono menu hambuerguesa*/
+			font-size: 60px;
+
 		}
 
-	/*enlaces menu*/
+
+	/*caja del menu azul cuando es responsive tamaño celular*/
 	.links{
 		/*para que roma todo lo de flex-block*/
 		position: fixed;
@@ -737,14 +767,16 @@ and (max-device-width : 568px) {
 		overflow: hidden;
 	}
 
+	/*texto  blanco del menu cuando es responsive tamaño celular*/
 	.links a{
 		display: block;
 		width: 100%;
-		height: 50px;
-		padding: 20px;
+		height: 80px;
+		padding: 30px;
 		text-align: center;
 		background: #34495e;
 		color: #fff;
+
 	}
 
 	/*texto */
@@ -756,27 +788,46 @@ and (max-device-width : 568px) {
 		font-size: 35px;
 	}
 
+/*FIN HEADER*/
+
+/*FIN QUIEN SOY*/
+
 	.content-card{
-		width: 48%;
-		margin-bottom: var(--margenes);
+
+		width: 90%;
+		height: 60%;
+		margin-bottom: 60px;
+
 	}
 
 
 
+	/*INICIO VENTANA MODAL*/
 
-/*VENTANA MODAL*/
+	/*link de quien soy*/
 	.text-information a{
-		font-size: 18px;
-		width: 140px;
-		padding: 4px;
+		font-size: 50px;
+		width: 400px;
 
+
+	}
+
+	.modal-header{
+		font-size: 30px;
 	}
 
 	.content-modal{
-		width: 65%;
+		width: 90%;
 
 	}
 
+	.modal-body p {
+		display: inline-block;
+		font-size: 40px;
+	}
+	/*FIN VENTANA MODAL*/
+
+/*FIN QUIEN SOY*/
 
 	.box-svc{
 		margin: auto;
