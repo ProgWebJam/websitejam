@@ -538,6 +538,7 @@ footer p{
 		/*para que se adapte a toda la pantalla*/
 		background-size: cover;
 	}
+
 	
 	/*navegador*/
 	.nav2{
@@ -706,6 +707,12 @@ and (max-device-width : 568px) {
 	:root{
 
 		--margenes: 30px;
+		--color1: rgba(219,144,.5);
+		--titulos: 36px;
+		--subtitulo: 18px;
+		--margenes: 60px;
+		--espacios: 10px;
+
 
 	}
 
@@ -716,6 +723,32 @@ and (max-device-width : 568px) {
 
 
 	}
+
+	.container h3{
+	font-size: var(--titulos);
+	color: var(--color1);
+	margin-bottom: var(--espacios);
+	}
+
+	.container p{
+
+	font-size: var(--subtitulo);
+	font-weight: 300;
+	color: #A9A9A9;
+	}
+
+	.after::after{
+
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: var(--espacios);
+	width: 300px;
+	height: 5px;
+	background: var(--color1);
+	margin-bottom: var(--espacios-contenido);
+
+}
 
 	.about{
 
@@ -732,6 +765,15 @@ and (max-device-width : 568px) {
 	.nav1{
 		height: 160px;
 	}
+
+	/*Tamaño del texto del menu*/
+	nav .links a{
+
+
+	font-size: 50px;
+
+
+}
 
 	.nav2{
 			color: #fff;
@@ -757,7 +799,7 @@ and (max-device-width : 568px) {
 	.links{
 		/*para que roma todo lo de flex-block*/
 		position: fixed;
-		top: 80px;
+		top: 90px;
 		background: #2c3e50;
 		left: 0;
 		height: 100%;
@@ -771,7 +813,7 @@ and (max-device-width : 568px) {
 	.links a{
 		display: block;
 		width: 100%;
-		height: 80px;
+		height: 200px;
 		padding: 30px;
 		text-align: center;
 		background: #34495e;
@@ -781,11 +823,11 @@ and (max-device-width : 568px) {
 
 	/*texto */
 	.texts>h1{
-		font-size: 70px;
+		font-size: 90px;
 	}
 
 	.texts>h2{
-		font-size: 35px;
+		font-size: 45px;
 	}
 
 /*FIN HEADER*/
@@ -816,6 +858,11 @@ and (max-device-width : 568px) {
 		font-size: 30px;
 	}
 
+	.close{
+	font-size: 50px;
+
+	}
+
 	.content-modal{
 		width: 90%;
 
@@ -824,23 +871,51 @@ and (max-device-width : 568px) {
 	.modal-body p {
 		display: inline-block;
 		font-size: 40px;
+
 	}
+
 	/*FIN VENTANA MODAL*/
 
 /*FIN QUIEN SOY*/
 
+/*INICIO SERVICIOS*/
 	.box-svc{
 		margin: auto;
-		width: 50%;
-		margin-bottom: var(--margenes);
-
+		width: 80%;
+		margin-bottom: 25px;
 		
 	}
 
-	.gallery-certificates .cont-certificates{
-		width: 70%;
+	.box-svc img{
+		width: 80%;
+
 	}
 
+	.box-svc>h4{
+	font-size: 60px;
+
+	}
+/*FIN SERVICIOS*/
+
+
+/*INICIO CERTIFICADOS*/
+	.gallery-certificates .cont-certificates{
+		width: 90%;
+		height: 60%;
+	}
+
+	.buttons-certificates li{
+
+	font-size: 40px;
+	}
+
+/*FIN CERTIFICADOS*/
+
+/*INICIO FOOTER*/
+	.brand-logo{
+		width: 80%;
+	}
+/*FIN FOOTER*/
 
 
 }
